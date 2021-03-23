@@ -5,7 +5,7 @@ import csv
 import random
 import statistics
 df = pd.read_csv("medium_data.csv")
-poplist = df["id"].to_list()
+poplist = df["reading_time"].to_list()
 
 popmean = statistics.mean(poplist)
 print("Population Mean {}".format(popmean))
